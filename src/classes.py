@@ -17,6 +17,7 @@ class Category:
     """Класс категории"""
 
     category_count = 0
+    product_count = 0
 
     name: str
     description: str
@@ -26,5 +27,5 @@ class Category:
         self.name = name
         self.description = description
         self.products = products
-        self.product_count = len(products)
+        Category.product_count += len(products)
         Category.category_count += 1

@@ -16,5 +16,4 @@ def test_class_category(category_test, category_test_2):
     assert category_test_2.description == "Описание 2"
     assert category_test_2.products == ["Продукт 1.2"]
     assert Category.category_count == 2
-    assert category_test.product_count == 2
-    assert category_test_2.product_count == 1
+    assert Category.product_count == 3
