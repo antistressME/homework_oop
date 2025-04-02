@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af65b3f-8091-4d23-9d76-aa2ae4cee1df" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/read_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/read_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_class.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
     "Python tests.Python tests for test_class.test_class_category.executor": "Run",
     "Python tests.Python tests for test_class.test_class_product.executor": "Run",
     "Python tests.Python tests for test_class.test_new_product.executor": "Run",
-    "Python.classes.executor": "Run",
+    "Python.classes.executor": "Debug",
     "Python.read_json.executor": "Run",
     "Python.test_class.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -73,7 +69,29 @@
       <recent name="C:\Users\user\AppData\Local\Programs\Python\Python312\Scripts\homework_oop\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_class.test_class_product">
+  <component name="RunManager" selected="Python tests.Python tests for test_class.test_add_price">
+    <configuration name="classes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="homework_oop" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/classes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_class.test_add_price" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="homework_oop" />
       <option name="ENV_FILES" value="" />
@@ -101,21 +119,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_class.test_add_product&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_class.test_class_category" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="homework_oop" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_class.test_class_category&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -151,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_class.test_class_product" />
-        <item itemvalue="Python tests.Python tests for test_class.test_class_category" />
+        <item itemvalue="Python tests.Python tests for test_class.test_add_price" />
         <item itemvalue="Python tests.Python tests for test_class.test_new_product" />
         <item itemvalue="Python tests.Python tests for test_class.test_add_product" />
-        <item itemvalue="Python tests.Python tests for test_class.test_add_price" />
+        <item itemvalue="Python.classes" />
+        <item itemvalue="Python tests.Python tests for test_class.test_class_product" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +188,7 @@
             <State>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
-                  <entry key="Show.Git.Branches" value="false" />
+                  <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
               <option name="FILTERS">

@@ -68,7 +68,7 @@ class Category:
 
     # @products.setter
     def add_product(self, product):  # метод для добавления продукта
-        if product not in self.__products:
+        if product not in self.__products and isinstance(product, Product):
             self.__products.append(product)
             Category.product_count += 1
 
