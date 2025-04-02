@@ -4,13 +4,14 @@ from src.classes import Category, Product
 
 
 def read_json():
-    """ Получаем данные из json-файла."""
-    with open('products.json', encoding='utf8') as file:
+    """Получаем данные из json-файла."""
+    with open("products.json", encoding="utf8") as file:
         data = json.load(file)
         return data
 
+
 def get_classes(data):
-    """ Получаем объекты классов"""
+    """Получаем объекты классов"""
     for point in data:
         category = Category(point["name"], point["description"], point["products"])
         # print(category.name)
@@ -25,7 +26,6 @@ def get_classes(data):
             # print(product.quantity)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     data = read_json()
     get_classes(data)
-
