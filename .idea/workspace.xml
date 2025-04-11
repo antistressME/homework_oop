@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af65b3f-8091-4d23-9d76-aa2ae4cee1df" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_class.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +59,14 @@
     "Python tests.Python tests for test_class.test_class_category.executor": "Run",
     "Python tests.Python tests for test_class.test_class_product.executor": "Run",
     "Python tests.Python tests for test_class.test_new_product.executor": "Run",
-    "Python.classes.executor": "Debug",
+    "Python tests.Python tests for test_class.test_str_category.executor": "Run",
+    "Python tests.Python tests for test_class.test_str_ctagory.executor": "Run",
+    "Python tests.Python tests for test_class.test_str_produsct.executor": "Run",
+    "Python.classes.executor": "Run",
     "Python.read_json.executor": "Run",
     "Python.test_class.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "task-14.2"
+    "git-widget-placeholder": "task-15.1"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -69,7 +74,7 @@
       <recent name="C:\Users\user\AppData\Local\Programs\Python\Python312\Scripts\homework_oop\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_class.test_add_price">
+  <component name="RunManager" selected="Python.classes">
     <configuration name="classes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homework_oop" />
       <option name="ENV_FILES" value="" />
@@ -107,7 +112,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_class.test_add_product" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_class.test_str_category" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="homework_oop" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,11 +123,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_class.test_add_product&quot;" />
+      <option name="_new_target" value="&quot;test_class.test_str_category&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_class.test_class_product" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_class.test_str_ctagory" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="homework_oop" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,11 +138,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_class.test_class_product&quot;" />
+      <option name="_new_target" value="&quot;test_class.test_str_ctagory&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_class.test_new_product" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_class.test_str_produsct" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="homework_oop" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,17 +153,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_class.test_new_product&quot;" />
+      <option name="_new_target" value="&quot;test_class.test_str_produsct&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_class.test_add_price" />
-        <item itemvalue="Python tests.Python tests for test_class.test_new_product" />
-        <item itemvalue="Python tests.Python tests for test_class.test_add_product" />
         <item itemvalue="Python.classes" />
-        <item itemvalue="Python tests.Python tests for test_class.test_class_product" />
+        <item itemvalue="Python tests.Python tests for test_class.test_str_category" />
+        <item itemvalue="Python tests.Python tests for test_class.test_str_ctagory" />
+        <item itemvalue="Python tests.Python tests for test_class.test_str_produsct" />
+        <item itemvalue="Python tests.Python tests for test_class.test_add_price" />
       </list>
     </recent_temporary>
   </component>
@@ -213,18 +218,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/classes.py</url>
-          <line>76</line>
+          <line>91</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_class.py</url>
           <line>10</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test_class.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

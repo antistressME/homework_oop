@@ -5,7 +5,7 @@ def test_class_product(product_apple):
     assert product_apple.name == "apple"
     assert product_apple.description == "fruit"
     assert product_apple.price == 101.10
-    assert product_apple.quantity == 1.5
+    assert product_apple.quantity == 150
 
 
 def test_class_category(category_test, category_test_2):
@@ -45,3 +45,16 @@ def test_new_product(product_apple):
 def test_add_price(product_apple):
     product_apple.price = 250
     assert product_apple.price == 250
+
+
+def test_str_produsct(product_apple, product_banana):
+    assert str(product_apple) == "apple, 101.1 руб. Остаток: 150 шт."
+    assert str(product_banana) == "banana, 250 руб. Остаток: 50 шт."
+
+
+def test_add_produsct(product_apple, product_banana):
+    assert product_apple + product_banana == 27665
+
+
+def test_str_category(category_test):
+    assert str(category_test) == "Название, количество продуктов: 200 шт."

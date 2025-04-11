@@ -23,7 +23,8 @@ class Product:
     @price.setter
     def price(self, new_price):
         if new_price < self.__price:
-            agree = input("Введите y, чтобы подтвердить понижени цены\nили n, чтобы отменить изменение цены")
+            agree = input("Введите y, чтобы подтвердить понижени цены"
+                          "\nили n, чтобы отменить изменение цены")
             if agree == "y" and new_price > 0:
                 self.__price = new_price
             else:
@@ -40,6 +41,13 @@ class Product:
             quantity=product_params["quantity"],
         )
         return new_product
+
+    def __str__(self):
+        return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
+
+    def __add__(self, other):
+        if isinstance(other, Product):
+            return self.price * self.quantity + other.price * other.quantity
 
 
 class Category:
@@ -63,7 +71,7 @@ class Category:
     def products(self):
         list_of_products = []
         for product in self.__products:
-            list_of_products.append(f"{product.name}, {product.price} руб. Остаток: {product.quantity} шт.")
+            list_of_products.append(str(product))
         return list_of_products
 
     # @products.setter
@@ -71,6 +79,12 @@ class Category:
         if product not in self.__products and isinstance(product, Product):
             self.__products.append(product)
             Category.product_count += 1
+
+    def __str__(self):
+        quantity_c = 0
+        for prod in self.__products:
+            quantity_c += prod.quantity
+        return f"{self.name}, количество продуктов: {quantity_c} шт."
 
 
 if __name__ == "__main__":
@@ -103,6 +117,8 @@ if __name__ == "__main__":
     print(new_product.description)
     print(new_product.price)
     print(new_product.quantity)
+    print(category1)
+    print(product4 + product1)
 
     new_product.price = 800
     print(new_product.price)
