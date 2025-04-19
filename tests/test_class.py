@@ -17,7 +17,8 @@ def test_class_category(category_test, category_test_2):
     assert Category.product_count == 3
 
 
-def test_add_product(smartphone_1, smartphone_2):
+def test_add_product(smartphone_1, smartphone_2, lawn_grass_1):
+    Category.product_count = 0
     category_1 = Category(
         "Название категории",
         "Описание категории",
@@ -28,6 +29,10 @@ def test_add_product(smartphone_1, smartphone_2):
     category_1.add_product(smartphone_1)
     assert category_1.product_count == 2
     assert category_1.products[1] == "Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток: 5 шт."
+    try:
+        category_1.add_product(lawn_grass_1)
+    except Exception:
+        assert TypeError
 
 
 def test_new_product(product_apple):
