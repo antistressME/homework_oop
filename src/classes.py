@@ -47,7 +47,8 @@ class Product:
     def __add__(self, other):
         if type(other) is self.__class__:
             return self.price * self.quantity + other.price * other.quantity
-        raise TypeError
+        else:
+            raise TypeError
 
 
 class Category:
@@ -76,9 +77,11 @@ class Category:
 
     # @products.setter
     def add_product(self, product):  # метод для добавления продукта
-        if product not in self.__products and isinstance(product, self.__class__):
+        if product not in self.__products and issubclass(type(product), Product):
             self.__products.append(product)
             Category.product_count += 1
+        else:
+            raise TypeError
 
     def __str__(self):
         quantity_c = 0
