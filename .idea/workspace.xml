@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af65b3f-8091-4d23-9d76-aa2ae4cee1df" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,38 +54,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_class.test_add_price.executor": "Run",
-    "Python tests.Python tests for test_class.test_add_product.executor": "Run",
-    "Python tests.Python tests for test_class.test_add_produscts.executor": "Run",
-    "Python tests.Python tests for test_class.test_add_produscts_error.executor": "Run",
-    "Python tests.Python tests for test_class.test_class_category.executor": "Run",
-    "Python tests.Python tests for test_class.test_class_product.executor": "Run",
-    "Python tests.Python tests for test_class.test_new_product.executor": "Run",
-    "Python tests.Python tests for test_class.test_str_category.executor": "Run",
-    "Python tests.Python tests for test_class.test_str_ctagory.executor": "Run",
-    "Python tests.Python tests for test_class.test_str_produsct.executor": "Run",
-    "Python tests.Python tests for test_products.test_add_dif_classes.executor": "Run",
-    "Python tests.Python tests for test_products.test_add_lawn_grass.executor": "Run",
-    "Python tests.Python tests for test_products.test_add_smartphone.executor": "Run",
-    "Python tests.Python tests for test_products.test_lawn_grass1.executor": "Run",
-    "Python tests.Python tests for test_products.test_lawn_grass2.executor": "Run",
-    "Python tests.Python tests for test_products.test_smartphone1.executor": "Run",
-    "Python tests.Python tests for test_products.test_smartphone2.executor": "Run",
-    "Python tests.Python tests in test_class.py.executor": "Run",
-    "Python.categories.executor": "Run",
-    "Python.classes.executor": "Run",
-    "Python.lesson.executor": "Run",
-    "Python.products (1).executor": "Run",
-    "Python.products.executor": "Run",
-    "Python.read_json.executor": "Run",
-    "Python.test_class.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "task-16.1",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_class.test_add_price.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_add_product.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_add_produscts.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_add_produscts_error.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_class_category.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_class_product.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_new_product.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_str_category.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_str_ctagory.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_class.test_str_produsct.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_products.test_add_dif_classes.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_products.test_add_lawn_grass.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_products.test_add_smartphone.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_products.test_lawn_grass1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_products.test_lawn_grass2.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_products.test_smartphone1.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_products.test_smartphone2.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_class.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.categories.executor&quot;: &quot;Run&quot;,
+    &quot;Python.classes.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lesson.executor&quot;: &quot;Run&quot;,
+    &quot;Python.products (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.products.executor&quot;: &quot;Run&quot;,
+    &quot;Python.read_json.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_class.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task-16.1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\AppData\Local\Programs\Python\Python312\Scripts\homework_oop\src" />
@@ -215,7 +218,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/task-15.1" />
+                        <option value="task-16.1" />
                       </list>
                     </value>
                   </entry>
