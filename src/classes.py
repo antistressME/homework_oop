@@ -23,8 +23,7 @@ class Product:
     @price.setter
     def price(self, new_price):
         if new_price < self.__price:
-            agree = input("Введите y, чтобы подтвердить понижени цены"
-                          "\nили n, чтобы отменить изменение цены")
+            agree = input("Введите y, чтобы подтвердить понижени цены" "\nили n, чтобы отменить изменение цены")
             if agree == "y" and new_price > 0:
                 self.__price = new_price
             else:
@@ -46,8 +45,10 @@ class Product:
         return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
 
     def __add__(self, other):
-        if isinstance(other, Product):
+        if type(other) is self.__class__:
             return self.price * self.quantity + other.price * other.quantity
+        else:
+            raise TypeError
 
 
 class Category:
@@ -76,9 +77,11 @@ class Category:
 
     # @products.setter
     def add_product(self, product):  # метод для добавления продукта
-        if product not in self.__products and isinstance(product, Product):
+        if product not in self.__products and issubclass(type(product), Product):
             self.__products.append(product)
             Category.product_count += 1
+        else:
+            raise TypeError
 
     def __str__(self):
         quantity_c = 0

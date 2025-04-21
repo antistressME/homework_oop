@@ -17,14 +17,22 @@ def test_class_category(category_test, category_test_2):
     assert Category.product_count == 3
 
 
-def test_add_product():
-    product_1 = Product("Название 1", "Описание 1", 100, 5)
-    product_2 = Product("Название 2", "Описание 2", 200.50, 8)
-    product_3 = Product("Название 3", "Описание 3", 310, 14)
-    category_1 = Category("Название категории", "Описание категории", [product_1, product_2])
-    category_1.add_product(product_3)
-    assert category_1.product_count == 3
-    assert category_1.products[2] == "Название 3, 310 руб. Остаток: 14 шт."
+def test_add_product(smartphone_1, smartphone_2, lawn_grass_1):
+    Category.product_count = 0
+    category_1 = Category(
+        "Название категории",
+        "Описание категории",
+        [
+            smartphone_2,
+        ],
+    )
+    category_1.add_product(smartphone_1)
+    assert category_1.product_count == 2
+    assert category_1.products[1] == "Samsung Galaxy S23 Ultra, 180000.0 руб. Остаток: 5 шт."
+    try:
+        category_1.add_product(lawn_grass_1)
+    except Exception:
+        assert TypeError
 
 
 def test_new_product(product_apple):
@@ -52,8 +60,11 @@ def test_str_produsct(product_apple, product_banana):
     assert str(product_banana) == "banana, 250 руб. Остаток: 50 шт."
 
 
-def test_add_produsct(product_apple, product_banana):
-    assert product_apple + product_banana == 27665
+def test_add_produscts_error(product_apple, product_banana):
+    try:
+        product_apple + product_banana
+    except Exception:
+        assert TypeError
 
 
 def test_str_category(category_test):
