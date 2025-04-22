@@ -1,4 +1,28 @@
-class Product:
+from abc import ABC, abstractmethod
+
+
+class BaseProduct(ABC):
+    """Абстрактный метод,
+    который является родительским для класса Product"""
+
+    @abstractmethod
+    def price(self):
+        pass
+
+    @abstractmethod
+    def new_product(self):
+        pass
+
+    @abstractmethod
+    def __str__(self):
+        pass
+
+    @abstractmethod
+    def __add__(self, other):
+        pass
+
+
+class Product(BaseProduct):
     """Класс продукты"""
 
     name: str
