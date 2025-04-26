@@ -1,4 +1,5 @@
 from src.classes import Category, Product
+from src.products import LawnGrass, Smartphone
 
 
 def test_class_product(product_apple):
@@ -69,3 +70,34 @@ def test_add_produscts_error(product_apple, product_banana):
 
 def test_str_category(category_test):
     assert str(category_test) == "Название, количество продуктов: 200 шт."
+
+
+def test_mixin_log1(smartphone_1):
+    assert repr(smartphone_1) == "Smartphone(Samsung Galaxy S23 Ultra, 256GB, Серый цвет, 200MP камера, 180000.0, 5)"
+
+
+def test_mixin_log2(lawn_grass_1):
+    assert repr(lawn_grass_1) == "LawnGrass(Газонная трава, Элитная трава для газона, 500.0, 20)"
+
+
+def test_mixin_log3(product_apple):
+    assert repr(product_apple) == "Product(apple, fruit, 101.1, 150)"
+
+
+def test_base_product():
+    assert (
+        str(Product.__mro__)
+        == "(<class 'src.classes.Product'>, <class 'src.classes.BaseProduct'>, <class 'abc.ABC'>, <class 'src.classes.MixinLog'>, <class 'object'>)"
+    )
+    assert (
+        str(Smartphone.__mro__)
+        == "(<class 'src.products.Smartphone'>, <class 'src.classes.Product'>, <class 'src.classes.BaseProduct'>, <class 'abc.ABC'>, <class 'src.classes.MixinLog'>, <class 'object'>)"
+    )
+    assert (
+        str(LawnGrass.__mro__)
+        == "(<class 'src.products.LawnGrass'>, <class 'src.classes.Product'>, <class 'src.classes.BaseProduct'>, <class 'abc.ABC'>, <class 'src.classes.MixinLog'>, <class 'object'>)"
+    )
+
+
+def test_mro():
+    assert str(Product.__mro__[1]) == "<class 'src.classes.BaseProduct'>"
