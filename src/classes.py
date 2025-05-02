@@ -1,5 +1,41 @@
-class Product:
-    """Класс продукты"""
+from abc import ABC, abstractmethod
+
+
+class BaseProduct(ABC):
+    """Абстрактный метод,
+    который является родительским для класса Product."""
+
+    @abstractmethod
+    def price(self):
+        pass
+
+    @abstractmethod
+    def new_product(self):
+        pass
+
+    @abstractmethod
+    def __str__(self):
+        pass
+
+    @abstractmethod
+    def __add__(self, other):
+        pass
+
+
+class MixinLog:
+    """Класс миксин, который при создании объекта
+    печатает в консоль информацию о том,
+    от какого класса и с какими параметрами был создан объект."""
+
+    def __init__(self):
+        print(repr(self))
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}({self.name}, {self.description}, {self.price}, {self.quantity})"
+
+
+class Product(BaseProduct, MixinLog):
+    """Класс продукты."""
 
     name: str
     description: str
@@ -11,6 +47,7 @@ class Product:
         self.description = description
         self.__price = price
         self.quantity = quantity
+        super().__init__()
 
     @property
     def price(self):
@@ -33,6 +70,10 @@ class Product:
 
     @classmethod
     def new_product(cls, product_params: dict):
+        # Метод для создания экзэпляра класса Прдукты,
+        # параметры получает в виде словаря:
+        # {'название атрибута': 'значение'}.
+
         new_product = cls(
             name=product_params["name"],
             description=product_params["description"],
@@ -45,6 +86,7 @@ class Product:
         return f"{self.name}, {self.price} руб. Остаток: {self.quantity} шт."
 
     def __add__(self, other):
+        # Метод для сложенния экземпляров класса Продукты и его подклассов.
         if type(other) is self.__class__:
             return self.price * self.quantity + other.price * other.quantity
         else:
@@ -52,7 +94,7 @@ class Product:
 
 
 class Category:
-    """Класс категории"""
+    """Класс категории."""
 
     category_count = 0
     product_count = 0
@@ -76,7 +118,8 @@ class Category:
         return list_of_products
 
     # @products.setter
-    def add_product(self, product):  # метод для добавления продукта
+    def add_product(self, product):
+        # Метод для добавления продукта в список продуктов категории.
         if product not in self.__products and issubclass(type(product), Product):
             self.__products.append(product)
             Category.product_count += 1

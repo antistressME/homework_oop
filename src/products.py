@@ -3,17 +3,18 @@ from src.classes import Category, Product
 
 class Smartphone(Product):
     """Класс «Смартфон»,
-    наследник класса «Продукты»"""
+    наследник класса «Продукты»
+
+    Атрибуты.
+    efficiency: производительность
+    model: модель
+    memory: объём встроенной памяти
+    color: цвет"""
 
     efficiency: float
     model: str
     memory: str
     color: str
-    """ атрибуты класса «Смартфон»:
-    efficiency: производительность
-    model: модель
-    memory: объём встроенной памяти
-    color: цвет """
 
     def __init__(self, name, description, price, quantity, efficiency, model, memory, color):
         super().__init__(name, description, price, quantity)
@@ -25,15 +26,16 @@ class Smartphone(Product):
 
 class LawnGrass(Product):
     """Класс «Трава газонная»,
-    наследник класса «Продукты»"""
+    наследник класса «Продукты»
+
+    Атрибуты.
+    country: страна-производитель
+    germination_period: срок прорастания
+    color: цвет"""
 
     country: str
     germination_period: str
     color: str
-    """ атрибуты класса «Трава газонная»:
-    country: страна-производитель
-    germination_period: срок прорастания
-    color: цвет """
 
     def __init__(self, name, description, price, quantity, country, germination_period, color):
         super().__init__(name, description, price, quantity)
