@@ -1,5 +1,6 @@
 from src.classes import Category, Product
 from src.products import LawnGrass, Smartphone
+import pytest
 
 
 def test_class_product(product_apple):
@@ -101,3 +102,29 @@ def test_base_product():
 
 def test_mro():
     assert str(Product.__mro__[1]) == "<class 'src.classes.BaseProduct'>"
+
+
+def test_value_error():
+    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
+        product_invalid = Product("Бракованный товар", "Неверное количество", 1000.0, 0)
+
+
+def test_value_error_():
+    with pytest.raises(ValueError, match="Товар с нулевым количеством не может быть добавлен"):
+        product_invalid = Product("Товар какой-то", "Что-то там", 1000.0, -1)
+
+
+def test_middle_price(smartphone_1, smartphone_2):
+    category = Category("Смартфоны", "Категория смартфонов", [smartphone_1, smartphone_2])
+    assert category.middle_price() == 11105
+
+
+def test_middle_price(lawn_grass_1, lawn_grass_2):
+    category = Category("Газонная трава", "Категория Газонная трава", [lawn_grass_1, lawn_grass_2])
+    assert category.middle_price() == 27
+
+
+def test_zero_division_error():
+    category_empty = Category("Пустая категория", "Категория без продуктов", [])
+    assert category_empty.middle_price() == 0
+
